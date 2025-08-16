@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="At RDL's, where your braids express who you are"
+    />
+    <meta name="Book Now " content="RDL, braids, hair, beauty, style" />
+    <meta name="keywords" content="RDL, braids, hair, beauty, style" />
+    <meta name="author" content="RDL BRAIDS" />
+    <link rel="stylesheet" href="../Styles/Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster"
+    />
+    <title>RDL BRAIDS - Booking</title>
+    <div class="logo">
+      <img
+        src="../Images/RDL.jpg"
+        alt="RDL BRAIDS"
+        width="150"
+        height="150"
+        stretch
+      />    
+    </div>
+  </head>   
+    <nav id="navbar" role="navigation" aria-label="Main Navigation">
+        <ul>
+        <li><a href="../Doc.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book.html">Book Now</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="Contactus.html">Contact Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+  <body>    
+    <h1>Book Your Appointment</h1>
+    <p>
+      At RDL BRAIDS, we make it easy for you to book your braiding appointment.
+      Please fill out the form below to schedule your visit.
+    </p>
+
+    <form action="submit_booking.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required />
+
+      <button type="submit">Book Now</button>
+      <button type="reset">Reset</button>
+      
+    </form>
+    <p class="center-text">
+      We will confirm your appointment via email or phone within 24 hours.
+    </p>
+    <p class="center-text">
+      If you have any specific requests or questions, please include them in the
+      message box below.
+    </p>
+    <form action="submit_message.php" method="post">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
+
+    <p class="center-text">
+      For any questions or special requests, please contact us at
+      <a href="contact.html">Contact Us</a>.
+    </p>
+    <p class="center-text">
+      You can also check our
+      <a href="prices.html">Prices</a> page for more information on our services.
+    </p>
+    <footer>
+      <p>&copy; 2025 RDL BRAIDS. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+      <p><a href="terms.html">Terms of Service</a></p>
+      <p>Follow us on social media:</p>
+      <ul>
+        <li><a href="https://www.tiktok.com/@rdl.braids">TikTok</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
+<!-- End of file: Pages/book.html -->
+<!-- This file is part of the RDL BRAIDS Web Project. -->
+<!-- 
+ -->
+<!--
+    --><!--     <footer>
+    <p>&copy; 2023 RDL BRAIDS. All rights reserved.</p>
+    </footer>
