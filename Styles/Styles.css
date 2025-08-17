@@ -3,13 +3,12 @@
 Developed by Eric Ekra
 Script Date: May 25, 2025 */
 
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 body,
 h1,
 h2,
 h3 {
-  font-family: Lobster, sans-serif, cursive, fantasy, Arial, Helvetica,
+  font-family: sans-serif, cursive, fantasy, Arial, Helvetica,
     sans-serif;
   background-color: #5c4033;
   line-height: 2.5;
