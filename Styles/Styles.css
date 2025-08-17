@@ -3,13 +3,12 @@
 Developed by Eric Ekra
 Script Date: May 25, 2025 */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
 body,
 h1,
 h2,
 h3 {
-  font-family: sans-serif, cursive, fantasy, Arial, Helvetica,
-    sans-serif;
+  font-family: cursive, fantasy, Arial, Helvetica;
   background-color: #5c4033;
   line-height: 2.5;
   margin: 0;
