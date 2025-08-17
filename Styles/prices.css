@@ -8,7 +8,7 @@ body,
 h1,
 h2,
 h3 {
-  font-family: sans-serif, cursive, fantasy, Arial, Helvetica,
+  font-family: 'Edu NSW ACT Cursive',sans-serif, cursive, fantasy, Arial, Helvetica,
     sans-serif;
   background-color: #5c4033;
   line-height: 0.5;
@@ -23,7 +23,7 @@ table {
 }
 th,
 td {
-  font-family: "Lobster", cursive, fantasy, Arial, Helvetica, sans-serif;
+  font-family: 'Edu NSW ACT Cursive', cursive, fantasy, Arial, Helvetica, sans-serif;
   padding: 10px;
   text-align: center;
 }
