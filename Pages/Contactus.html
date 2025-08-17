@@ -39,17 +39,16 @@
       contact us via email or phone.
     </p>
 
-    <form action="#" method="post">
+    <form id ="Contact-Form">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+      <input type="text" id="name" placeholder="name" required />
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" id="email" placeholder="email" required />
 
       <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Send Message</button>
+      <textarea id="message" name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send </button>
     </form>
 
     <p>Or contact us directly at:</p>
@@ -62,11 +61,26 @@
         <a href="https://www.tiktok.com/@rdl.braids" target="_blank">TikTok</a>
       </li>
     </ul>
-
+    <div id="toast" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+  font-family: sans-serif;
+"></div>
     <footer>
       <p>&copy; 2025 RDL BRAIDS. All rights reserved.</p>
       <p><a href="privacy.html">Privacy Policy</a></p>
       <p><a href="terms.html">Terms of Service</a></p>
+      <button id="toggle-theme">Toggle Theme</button>
     </footer>
+    <script src="../Scripts/Contactus.js"></script>
   </body>
+   <script src="../Scripts/Toggle.js"></script>
 </html>

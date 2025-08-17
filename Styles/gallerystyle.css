@@ -19,6 +19,8 @@ h3 {
   gap: 20px;
 }
 .gallery {
+  max-width: 100%;
+  padding:1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

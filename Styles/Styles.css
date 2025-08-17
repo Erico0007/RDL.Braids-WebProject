@@ -160,3 +160,19 @@ footer {
   position: flex;
   bottom: 100px;
 }
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.brown-theme {
+  background-color: brown;
+  color: white;
+}
+
+.sepia-mode {
+  background-color: #704214;
+  color: #fdf6e3;
+}
