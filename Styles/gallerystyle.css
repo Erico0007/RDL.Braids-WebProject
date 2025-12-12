@@ -3,56 +3,82 @@
 Developed by Eric Ekra
 Script Date: May 25, 2025 */
 
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap");
 
 body,
 h1,
 h2,
 h3 {
-  font-family: 'Edu NSW ACT Cursive', sans-serif, cursive, fantasy, Arial, Helvetica,
-    sans-serif;
-  background-color: #5c4033;
-  line-height: 0.5;
+  font-family: "Edu NSW ACT Cursive", cursive, Arial, Helvetica, sans-serif;
+  background-color: #d4a437;
+  color: #333;
+  line-height: 1.4;
   margin: 0;
   padding: 10px;
-  gap: 20px;
 }
-.gallery {
-  max-width: 100%;
-  padding:1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
 }
+.language-switcher a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+.language-switcher a:hover {
+  text-decoration: underline;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 .content {
   flex: 1;
   padding: 20px;
 }
-.gallery blockquote {
+.video-gallery {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1 fr);
+  gap: 20px;
+}
+.video-gallery blockquote {
   flex: 1 1 300px;
   max-width: 320px;
   height: 575px;
-  background-color: #5c4033;
+  background-color: #b8860b;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
 }
+
 .video-gallery:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
 
+.gallery blockquote iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media (max-width: 900px) {
+  .video-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .video-gallery {
+    grid-template-columns: 1fr; /* 1 per row on phones */
+  }
+}
+
 footer {
-  background-color: #5c4033;
+  background-color: #b8860b;
   color: #d9c2a0;
   text-align: center;
   padding: 20px;

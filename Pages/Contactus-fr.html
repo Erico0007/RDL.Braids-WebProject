@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Chez RDL Touch, l'allure rencontre l'art"
+    />
+    <meta name="keywords" content="RDL, tresses, coiffure, beauté, style" />
+    <meta name="author" content="RDL Touch" />
+    <link rel="stylesheet" href="../Styles/Styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>RDL Touch - Contact</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "service_ajmnzll",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../Images/RDL Touch.jpeg"
+          alt="Logo RDL BRAIDS"
+          width="150"
+          height="150"
+        />
+      </div>
+
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        <a href="contactus.html">English</a> |
+        <a href="contactus-fr.html">Français</a>
+      </div>
+
+      <nav id="navbar" role="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="../Doc-fr.html">Accueil</a></li>
+          <li><a href="services-fr.html">Services</a></li>
+          <li><a href="book-fr.html">Réserver</a></li>
+          <li><a href="prices-fr.html">Tarifs</a></li>
+          <li><a href="gallery-fr.html">Galerie</a></li>
+          <li><a href="contactus-fr.html">Contact</a></li>
+          <li><a href="aboutus(french).html">À propos</a></li>
+          <!-- Toggle back to English -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contact</h1>
+      <p>
+        Nous serions ravis d’avoir de vos nouvelles ! Si vous avez des
+        questions, des commentaires ou souhaitez réserver un rendez-vous,
+        veuillez remplir le formulaire ci-dessous ou nous contacter par e-mail
+        ou téléphone.
+      </p>
+
+      <form id="Contact-Form">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" placeholder="nom" required />
+
+        <label for="email">Courriel :</label>
+        <input type="email" id="email" placeholder="courriel" required />
+
+        <label for="message">Message :</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Votre message"
+          required
+        ></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <p>Ou contactez-nous directement :</p>
+      <p>Email : <a href="mailto:info@rdlbraids.com">info@rdlbraids.com</a></p>
+      <p>Téléphone : <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      <p>Adresse : 190 Avenue Dube, Montréal, QC H1B4X2, Canada</p>
+      <p>
+        Suivez-nous sur les réseaux sociaux pour les dernières nouveautés et
+        styles :
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.tiktok.com/@rdl.touch" target="_blank">TikTok</a>
+        </li>
+      </ul>
+    </main>
+
+    <!-- Toast notification -->
+    <div
+      id="toast"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 1000;
+        font-family: sans-serif;
+      "
+    ></div>
+
+    <footer>
+      <p>&copy; 2025 RDL Touch. Tous droits réservés.</p>
+      <p><a href="privacy.html">Politique de confidentialité</a></p>
+      <p><a href="terms.html">Conditions d’utilisation</a></p>
+      <button id="toggle-theme">Changer de thème</button>
+    </footer>
+
+    <script src="../Scripts/Contactus.js"></script>
+    <script src="../Scripts/Toggle.js"></script>
+  </body>
+</html>

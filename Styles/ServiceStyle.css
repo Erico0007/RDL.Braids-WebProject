@@ -9,7 +9,7 @@ h1,
 h2 {
   font-family: 'Edu NSW ACT Cursive',cursive, fantasy, Arial, Helvetica,
     sans-serif;
-  background-color: #5c4033;
+  background-color: #B8860B;
   line-height: 1.5;
   margin: 0;
   padding: 0px;
@@ -18,9 +18,22 @@ h2 {
 .h3 {
   font-family: 'Edu NSW ACT Cursive',cursive, fantasy, Arial, Helvetica,
     sans-serif;
-  color: #d9c2a0;
+  color: #B8860B;
   text-align: center;
   margin-top: 20px;
+}
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+}
+.language-switcher a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+.language-switcher a:hover {
+  text-decoration: underline;
 }
 .service-list ul {
   list-style: none;
@@ -36,7 +49,7 @@ h2 {
   margin: 15px auto; /* Adds vertical spacing between items */
   padding: 20px;
   background-color: #f0e6d2;
-  border: 2px solid #5c4033;
+  border: 2px solid #B8860B;
   border-radius: 10px;
   width: 80%;
   text-align: left;
@@ -59,10 +72,22 @@ h2 {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 900px) {
+  .video-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .video-gallery {
+    grid-template-columns: 1fr; /* 1 per row on phones */
+  }
+}
+
 
 footer {
   background-color: #5c4033;
-  color: #d9c2a0;
+  color: #B8860B;
   text-align: center;
   padding: 20px 0;
   position: flex;

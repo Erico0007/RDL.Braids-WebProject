@@ -10,12 +10,23 @@ h2,
 h3 {
   font-family: 'Edu NSW ACT Cursive',sans-serif, cursive, fantasy, Arial, Helvetica,
     sans-serif;
-  background-color: #5c4033;
+  background-color: #B8860B;
   line-height: 0.5;
   margin: 0;
   padding: 10px;
   gap: 20px;
 }
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+}
+.language-switcher a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
 table {
   width: 50%;
   border-collapse: collapse;
@@ -29,12 +40,13 @@ td {
 }
 th {
   background-color: #d9c2a0;
-  color: #5c4033;
+  color: #B8860B;
   font-size: 1.5em;
 }
+
 td {
   background-color: #f0e6d2;
-  color: #5c4033;
+  color: #B8860B;
   font-size: 1.2em;
 }
 td img {
@@ -55,10 +67,22 @@ td:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 900px) {
+  .video-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .video-gallery {
+    grid-template-columns: 1fr; /* 1 per row on phones */
+  }
+}
+
 
 footer {
-  background-color: #5c4033;
-  color: #d9c2a0;
+  background-color: #B8860B;
+  color: #B8860B;
   text-align: center;
   padding: 20px 0;
   position: flex;

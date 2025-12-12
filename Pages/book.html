@@ -6,102 +6,102 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="At RDL's, where your braids express who you are"
+      content="At RDL Touch, where allure meets artistry"
     />
-    <meta name="Book Now " content="RDL, braids, hair, beauty, style" />
     <meta name="keywords" content="RDL, braids, hair, beauty, style" />
-    <meta name="author" content="RDL BRAIDS" />
+    <meta name="author" content="RDL Touch" />
     <link rel="stylesheet" href="../Styles/Styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
-    <title>RDL BRAIDS - Booking</title>
-    <div class="logo">
-      <img
-        src="../Images/RDL.jpg"
-        alt="RDL BRAIDS"
-        width="150"
-        height="150"
-        stretch
-      />    
-    </div>
-  </head>   
-    <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>RDL Touch - Booking</title>
+    <style>
+      /* Make iframe responsive */
+      .form-container {
+        position: relative;
+        padding-bottom: 80%; /* Adjust for aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
+      .form-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <div class="language-switcher">
+    <a href="Doc.html">English</a> | <a href="Doc-fr.html">Français</a>
+  </div>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="../Images/RDL Touch.jpeg"
+          alt="RDL BRAIDS logo"
+          width="150"
+          height="150"
+        />
+      </div>
+      <nav id="navbar" role="navigation" aria-label="Main Navigation">
         <ul>
-        <li><a href="../Doc.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="book.html">Book Now</a></li>
-        <li><a href="prices.html">Prices</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="Contactus.html">Contact Us</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="../Doc.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="book.html">Book Now</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="Contactus.html">Contact Us</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="book-fr.html">Français</a></li>
         </ul>
-    </nav>
-  <body>    
-    <h1>Book Your Appointment</h1>
-    <p>
-      At RDL BRAIDS, we make it easy for you to book your braiding appointment.
-      Please fill out the form below to schedule your visit.
-    </p>
+      </nav>
+    </header>
 
-    <form action="submit_booking.php" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+    <main>
+      <h1>Book Your Appointment</h1>
+      <p>
+        At RDL Touch, we make it easy for you to book your braiding appointment.
+        Please fill out the form below to schedule your visit.
+      </p>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <!-- Responsive Google Form -->
+      <div class="form-container">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScFihKQfYRSu3lpEzUZhlPWzoy2UTAZwemZ511mqXzFxKr1_w/viewform?embedded=true"
+        >
+          Loading…
+        </iframe>
+      </div>
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required />
+      <p class="center-text">
+        We will confirm your appointment via email or phone within 24 hours.
+      </p>
+      <p class="center-text">
+        For any questions or special requests, please contact us at
+        <a href="Contactus.html">Contact Us</a>.
+      </p>
+      <p class="center-text">
+        You can also check our <a href="prices.html">Prices</a> page for more
+        information on our services.
+      </p>
+    </main>
 
-      <label for="date">Preferred Date:</label>
-      <input type="date" id="date" name="date" required />
-
-      <label for="time">Preferred Time:</label>
-      <input type="time" id="time" name="time" required />
-
-      <button type="submit">Book Now</button>
-      <button type="reset">Reset</button>
-      
-    </form>
-    <p class="center-text">
-      We will confirm your appointment via email or phone within 24 hours.
-    </p>
-    <p class="center-text">
-      If you have any specific requests or questions, please include them in the
-      message box below.
-    </p>
-    <form action="submit_message.php" method="post">
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" cols="50"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    
-
-    <p class="center-text">
-      For any questions or special requests, please contact us at
-      <a href="contact.html">Contact Us</a>.
-    </p>
-    <p class="center-text">
-      You can also check our
-      <a href="prices.html">Prices</a> page for more information on our services.
-    </p>
     <footer>
-      <p>&copy; 2025 RDL BRAIDS. All rights reserved.</p>
+      <p>&copy; 2025 RDL Touch. All rights reserved.</p>
       <p><a href="privacy.html">Privacy Policy</a></p>
       <p><a href="terms.html">Terms of Service</a></p>
       <p>Follow us on social media:</p>
       <ul>
         <li><a href="https://www.tiktok.com/@rdl.braids">TikTok</a></li>
       </ul>
+      <button id="toggle-theme">Toggle Theme</button>
     </footer>
-    <button id="toggle-theme">Toggle Theme</button>
+
+    <script src="../Scripts/Toggle.js"></script>
   </body>
-   <script src="../Scripts/Toggle.js"></script>
 </html>
-<!-- End of file: Pages/book.html -->
-<!-- This file is part of the RDL BRAIDS Web Project. -->
-<!-- 
- -->
-<!--
-    --><!--     <footer>
-    <p>&copy; 2023 RDL BRAIDS. All rights reserved.</p>
-    </footer>

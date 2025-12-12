@@ -6,18 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="At RDL's, where your braids express who you are"
+      content="At RDL Touch, where your braids express who you are"
     />
     <meta name="Contact" content="RDL, braids, hair, beauty, style" />
     <meta name="keywords" content="RDL, braids, hair, beauty, style" />
-    <meta name="author" content="RDL BRAIDS" />
+    <meta name="author" content="RDL Touch" />
     <link rel="stylesheet" href="../Styles/Styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <title>RDL BRAIDS - Contact Us</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "service_ajmnzll",
+        });
+      })();
+    </script>
   </head>
+  <div class="language-switcher">
+    <a href="Doc.html">English</a> | <a href="Doc-fr.html">Français</a>
+  </div>
+
   <body>
     <div class="logo">
-      <img src="../Images/RDL.jpg" alt="RDL BRAIDS" width="150" height="150" />
+      <img
+        src="../Images/RDL Touch.jpeg"
+        alt="RDL BRAIDS"
+        width="150"
+        height="150"
+      />
     </div>
 
     <nav id="navbar" role="navigation" aria-label="Main Navigation">
@@ -39,7 +62,7 @@
       contact us via email or phone.
     </p>
 
-    <form id ="Contact-Form">
+    <form id="Contact-Form">
       <label for="name">Name:</label>
       <input type="text" id="name" placeholder="name" required />
 
@@ -47,8 +70,13 @@
       <input type="email" id="email" placeholder="email" required />
 
       <label for="message">Message:</label>
-      <textarea id="message" name="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send </button>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Your message"
+        required
+      ></textarea>
+      <button type="submit">Send</button>
     </form>
 
     <p>Or contact us directly at:</p>
@@ -58,29 +86,32 @@
     <p>Follow us on social media for the latest updates and styles:</p>
     <ul>
       <li>
-        <a href="https://www.tiktok.com/@rdl.braids" target="_blank">TikTok</a>
+        <a href="https://www.tiktok.com/@rdl.touch" target="_blank">TikTok</a>
       </li>
     </ul>
-    <div id="toast" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #333;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  z-index: 1000;
-  font-family: sans-serif;
-"></div>
+    <div
+      id="toast"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 1000;
+        font-family: sans-serif;
+      "
+    ></div>
     <footer>
-      <p>&copy; 2025 RDL BRAIDS. All rights reserved.</p>
+      <p>&copy; 2025 RDL Touch. All rights reserved.</p>
       <p><a href="privacy.html">Privacy Policy</a></p>
       <p><a href="terms.html">Terms of Service</a></p>
       <button id="toggle-theme">Toggle Theme</button>
     </footer>
     <script src="../Scripts/Contactus.js"></script>
   </body>
-   <script src="../Scripts/Toggle.js"></script>
+  <script src="../Scripts/Toggle.js"></script>
 </html>
