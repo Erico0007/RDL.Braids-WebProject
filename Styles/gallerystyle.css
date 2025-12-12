@@ -1,85 +1,115 @@
 @charset "utf-8";
-/* CSS Document for Lab-1 
-Developed by Eric Ekra
-Script Date: May 25, 2025 */
+/* CSS Document for RDL BRAIDS
+   Developed by Eric Ekra
+   Script Date: Dec 12, 2025 */
 
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap");
 
-body,
+/* Base styles */
+body {
+  font-family: "Edu NSW ACT Cursive", cursive, Arial, Helvetica, sans-serif;
+  background-color: #fff8e7; /* soft cream background */
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 10px;
+}
+
 h1,
 h2,
 h3 {
   font-family: "Edu NSW ACT Cursive", cursive, Arial, Helvetica, sans-serif;
-  background-color: #d4a437;
-  color: #333;
-  line-height: 1.4;
-  margin: 0;
-  padding: 10px;
+  color: #b8860b; /* goldenrod accent */
+  text-align: center;
+  margin-top: 20px;
 }
+
+/* Language Switcher */
 .language-switcher {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   font-weight: bold;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 5px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 .language-switcher a {
   margin: 0 5px;
   text-decoration: none;
+  color: #b8860b;
 }
 .language-switcher a:hover {
   text-decoration: underline;
+  color: #8b6508; /* darker gold */
 }
 
+/* Page Container */
 .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* Content */
 .content {
   flex: 1;
   padding: 20px;
 }
+
+/* Video Gallery */
 .video-gallery {
-  display: flex;
-  justify-content: center;
-  grid-template-columns: repeat(3, 1 fr);
+  display: grid; /* corrected from flex */
+  grid-template-columns: repeat(3, 1fr); /* fixed spacing */
   gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 .video-gallery blockquote {
   flex: 1 1 300px;
   max-width: 320px;
   height: 575px;
-  background-color: #b8860b;
+  background-color: #f0e6d2;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.video-gallery:hover {
-  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+.video-gallery blockquote:hover {
+  transform: scale(1.03);
+}
 
-.gallery blockquote iframe {
+/* Embedded TikTok iframe */
+.video-gallery blockquote iframe {
   width: 100%;
   height: 100%;
   border: none;
 }
+
+/* Responsive */
 @media (max-width: 900px) {
   .video-gallery {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 600px) {
   .video-gallery {
-    grid-template-columns: 1fr; /* 1 per row on phones */
+    grid-template-columns: 1fr;
   }
 }
 
+/* Footer */
 footer {
   background-color: #b8860b;
-  color: #d9c2a0;
+  color: #fff; /* white text for contrast */
   text-align: center;
   padding: 20px;
+  margin-top: 40px;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: #f0e6d2;
 }
