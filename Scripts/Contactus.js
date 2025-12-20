@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize EmailJS
-  emailjs.init("RcVR1FjWR03O_dV9H"); // Replace with your actual EmailJS public key
+  emailjs.init("RcVR1FjWR03O_dV9H"); // Your public key
 
   // DOM Elements
   const contactForm = document.getElementById("Contact-Form");
@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
   confirmationMessage.setAttribute("aria-live", "polite");
   contactForm.appendChild(confirmationMessage);
 
-  // Toast Element
   const toast = document.getElementById("toast");
 
   // Form Submit Handler
@@ -34,25 +33,38 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Send message via EmailJS
-    const templateParams = {
+    // Admin Notification
+    const adminParams = {
       name: name,
       email: email,
       message: message,
     };
 
-    emailjs
-      .send("service_ajmnzll", "template_c2492ud", templateParams)
+    // Client Confirmation
+    const clientParams = {
+      name: name,
+      email: email,
+      message: message,
+    };
+
+    // Send to Admin
+    emailjs.send("service_ajmnzll", "template_c2492ud", adminParams)
+      .then(() => {
+        console.log("Admin email sent");
+      })
+      .catch((error) => {
+        console.error("Admin email error:", error);
+      });
+
+    // Send to Client
+    emailjs.send("service_ajmnzll", "template_hdjlf39", clientParams)
       .then(() => {
         showConfirmation("✅ Your message has been sent successfully!");
         contactForm.reset();
       })
       .catch((error) => {
-        console.error("EmailJS Error:", error);
-        showConfirmation(
-          "❌ Failed to send message. Please try again later.",
-          true
-        );
+        console.error("Client email error:", error);
+        showConfirmation("❌ Failed to send message. Please try again later.", true);
       });
   });
 
